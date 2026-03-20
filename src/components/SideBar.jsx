@@ -51,7 +51,7 @@ function SideBar() {
             </ul>
           </div>
         </div>
-        <div className="flex flex-row p-3 gap-2 border border-accent rounded-lg hover:bg-accent hover:cursor-pointer">
+        <div className="flex flex-row p-3 gap-2 border border-accent rounded-lg hover:bg-accent hover:text-font-primary hover:cursor-pointer">
           <LogOut />
           logout
         </div>
