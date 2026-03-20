@@ -1,10 +1,15 @@
-function App() {
+import SideBar from "./components/SideBar.jsx";
+import TopBar from "./components/TopBar.jsx";
 
+function App() {
   return (
     <>
-    hello
-     </>
-  )
+      <SideBar />
+      <main>
+        <TopBar />
+      </main>
+    </>
+  );
 }
 
-export default App
+export default App;
