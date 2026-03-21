@@ -14,7 +14,7 @@ function BarChartSection() {
       <div className="bg-card p-6 rounded-xl shadow-sm flex flex-col items-center gap-4 hover:cursor-pointer">
         <h2 className="text-sm text-font-secondary mb-4">Task Overview</h2>
         <ResponsiveContainer width="100%" height={250}>
-          <BarChart data={chartsection_data}>
+          <BarChart data={chartsection_data} responsive>
             <XAxis dataKey="name" />
             <YAxis />
             <Tooltip />
