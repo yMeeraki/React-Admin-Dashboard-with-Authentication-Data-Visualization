@@ -15,7 +15,7 @@ function SideBar() {
         <div className="flex flex-col gap-10">
           <div className="flex flex-row gap-2">
             <img
-              className="rounded-full size-12 hover:cursor-pointer"
+              className="rounded-full size-12 hover:cursor-pointer border border-accent  hover:scale-105 transition"
               src={avatar}
               alt="avatar"
             />
