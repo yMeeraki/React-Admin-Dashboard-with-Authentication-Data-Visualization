@@ -4,8 +4,8 @@ import TopBar from "./components/TopBar.jsx";
 function App() {
   return (
     <>
-      <SideBar />
-      <main>
+      {/* <SideBar /> */}
+      <main className="flex-2 bg-background">
         <TopBar />
       </main>
     </>

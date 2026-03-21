@@ -1,24 +1,131 @@
 @import "tailwindcss";
 @import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Overpass:ital,wght@0,100..900;1,100..900&display=swap");
 
+/* 
+Background Colors
+#F9FAFB → Page background
+#FFFFFF → Cards
+#F1F5F9 → Secondary background (sections)
+⚫ Text Colors
+#111827 → Main text (headings)
+#374151 → Secondary text
+#9CA3AF → Light/placeholder text
+*/
+/* 
+🎨 1. Primary Color Palette (Modern Dashboard)
+
+Use this as your base:
+
+🔵 Primary (Brand Color)
+#4F46E5 → Main buttons, active states
+#6366F1 → Hover state
+#818CF8 → Light accents
+
+👉 Used for:
+
+Active sidebar item
+Buttons
+Highlights
+
+⚫ Text Colors
+#111827 → Main text (headings)
+#374151 → Secondary text
+#9CA3AF → Light/placeholder text
+📊 2. Status Colors (VERY IMPORTANT)
+
+These make your dashboard feel real:
+
+🟢 Success (Completed)
+#10B981
+🟡 Warning (Pending)
+#F59E0B
+🔵 Info (In Progress)
+#3B82F6
+🔴 Error
+#EF4444
+
+👉 Use in:
+
+Task status badges
+Icons
+Charts
+🧱 3. Card Design Style (Figma Feel)
+Card Properties:
+Background: #FFFFFF
+Border-radius: 12px
+Shadow: soft
+
+Example shadow:
+
+0px 4px 12px rgba(0, 0, 0, 0.05)
+📐 4. Spacing System (Super Important)
+
+Follow this like Figma:
+
+8px → small spacing
+16px → normal spacing
+24px → section spacing
+32px → large gaps
+
+👉 This creates clean UI automatically
+
+🔤 5. Typography (Clean & Modern)
+
+Use:
+
+Heading: bold, large
+Subtext: medium
+Labels: small
+
+Example:
+
+Title: 20–24px
+Card value: 28–32px
+Text: 14–16px
+🌙 6. Optional Dark Mode (Advanced)
+
+If you want to stand out:
+
+Dark colors:
+Background: #111827
+Card: #1F2937
+Text: #F9FAFB
+🎯 7. Ready-to-Use Theme (Copy This)
+
+You can literally use this as your design system:
+
+Primary: #4F46E5
+Background: #F9FAFB
+Card: #FFFFFF
+Text: #111827
+
+Success: #10B981
+Warning: #F59E0B
+Info: #3B82F6
+Error: #EF4444
+*/
+
 @theme {
   --color-primary: #4f46e5;
-  --color-secondary: #6366f1;
-
+  --color-secondary: #00444e;
   --color-accent: #00f4f3;
 
-  --color-background: #f9fafb;
+  /* Background Colors */
+  --color-background: #faf7ff;
   --color-card: #ffffff;
+  --color-section: #f1f5f9;
 
-  --color-font-primary: #001c31;
-  --color-font-secondary: #6b7280;
+  /* Text Colors */
+  --color-font-primary: #00232a;
+  --color-font-secondary: #374151;
+  --color-font-placeholder: #9ca3af;
 
   --color-success: #10b981;
   --color-warning: #f59e0b;
   --color-info: #3b82f6;
   --color-danger: #ef4444;
 
-  --color-sidebar: #111827;
+  --color-sidebar: #00232a;
 
   --font-inter: "Inter", sans-serif;
 }
