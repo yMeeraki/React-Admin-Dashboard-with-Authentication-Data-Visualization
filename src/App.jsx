@@ -1,5 +1,5 @@
-import SideBar from "./components/SideBar.jsx";
-import TopBar from "./components/TopBar.jsx";
+import SideBar from "./components/SideBar/SideBar.jsx";
+import TopBar from "./components/TopBar/TopBar.jsx";
 
 function App() {
   return (

@@ -6,7 +6,7 @@ import {
   Settings,
   User,
 } from "lucide-react";
-import avatar from "../assets/avatar.jpg";
+import avatar from "../../assets/avatar.jpg";
 
 function SideBar() {
   return (

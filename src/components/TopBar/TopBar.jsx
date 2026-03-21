@@ -1,5 +1,5 @@
-import { Bell, Search } from "lucide-react";
-import avatar from "../assets/avatar.jpg";
+import { Search } from "lucide-react";
+import avatar from "../../assets/avatar.jpg";
 
 function TopBar() {
   return (
