@@ -11,7 +11,7 @@ import avatar from "../../assets/avatar.jpg";
 function SideBar() {
   return (
     <>
-      <nav className="flex flex-col justify-between items-center w-64 h-screen p-8 bg-sidebar text-white">
+      <aside className="flex flex-col justify-between items-center w-64 fixed top-0 left-0 h-screen p-8 bg-sidebar text-white">
         <div className="flex flex-col gap-10">
           <div className="flex flex-row gap-2">
             <img
@@ -26,7 +26,7 @@ function SideBar() {
               <p className="text-sm hover:cursor-pointer">Frontend Developer</p>
             </div>
           </div>
-          <div>
+          <nav>
             <ul className="flex flex-col gap-5">
               <li className="p-2 rounded-lg flex gap-8 items-center text-sm hover:bg-accent/20 hover:text-accent hover:cursor-pointer ">
                 <Presentation className="ml-3" />
@@ -49,13 +49,14 @@ function SideBar() {
                 Settings
               </li>
             </ul>
-          </div>
+          </nav>
         </div>
-        <div className="flex flex-row p-3 gap-2 border border-accent rounded-lg hover:bg-accent hover:text-font-primary hover:cursor-pointer">
+
+        <div className="flex flex-row p-3 gap-2 border border-accent rounded-lg hover:bg-accent hover:text-black hover:cursor-pointer">
           <LogOut />
-          logout
+          LogOut
         </div>
-      </nav>
+      </aside>
     </>
   );
 }

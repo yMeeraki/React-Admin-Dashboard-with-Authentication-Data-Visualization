@@ -16,7 +16,7 @@ function PieChartSection() {
       <div className="bg-card p-6 rounded-xl shadow-sm flex flex-col items-center gap-4 hover:cursor-pointer">
         <h2 className="text-sm text-font-secondary mb-4">Task Breakdown</h2>
         <ResponsiveContainer height={250} width="100%">
-          <PieChart>
+          <PieChart >
             <Pie
               data={data}
               dataKey="value"
