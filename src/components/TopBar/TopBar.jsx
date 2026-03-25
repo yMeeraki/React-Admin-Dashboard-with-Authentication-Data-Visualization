@@ -1,7 +1,14 @@
-import { Search } from "lucide-react";
+import { Moon, Sun, Search } from "lucide-react";
 import avatar from "../../assets/avatar.jpg";
+import React from "react";
 
 function TopBar() {
+  const [mode, setMode] = React.useState(true);
+
+  function changeMode() {
+    setMode((prev) => !prev);
+  }
+
   return (
     <>
       <header className="bg-section flex justify-between h-24 px-6 items-center shadow-xl/20">
@@ -30,11 +37,20 @@ function TopBar() {
             </button>
           </form>
 
-          <img
-            className="rounded-full size-10 border-2 border-primary hover:cursor-pointer hover:scale-105 transition"
-            src={avatar}
-            alt="avatar"
-          />
+          <div className="flex items-center gap-2">
+            <button onClick={changeMode}>
+              {mode ? (
+                <Moon className="text-primary bg-blue-200 rounded-full size-10 p-1 hover:cursor-pointer hover:scale-105 transition" />
+              ) : (
+                <Sun className="text-primary bg-yellow-200 rounded-full size-10 p-1 hover:cursor-pointer hover:scale-105 transition" />
+              )}
+            </button>
+            <img
+              className="rounded-full size-10 border-2 border-primary hover:cursor-pointer hover:scale-105 transition"
+              src={avatar}
+              alt="avatar"
+            />
+          </div>
         </div>
       </header>
     </>
